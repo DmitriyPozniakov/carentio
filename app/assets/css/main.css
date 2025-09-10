@@ -1,0 +1,93 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  background: #f6fefb;
+}
+
+@layer components {
+  .font-geist {
+    font-family: "Geist", sans-serif;
+  }
+
+  .font-roboto {
+    font-family: "Roboto", sans-serif;
+  }
+
+  .bg-hero-radial {
+    background-color: hsla(176, 37%, 16%, 1);
+    background-image: radial-gradient(
+        at 0% 100%,
+        hsla(196, 35%, 7%, 1) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 70% 4%, hsla(196, 35%, 7%, 1) 0px, transparent 50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .gradient-glow {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    height: 230px;
+    border-radius: 350px;
+    background: linear-gradient(
+      180deg,
+      rgba(60, 247, 170, 0.38) 0.37%,
+      #29f3e9 121.69%
+    );
+    filter: blur(55px);
+    z-index: 0;
+  }
+
+  .gradient-review {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background: linear-gradient(
+      180deg,
+      rgba(60, 247, 170, 0.38) 0.37%,
+      #29f3e9 121.69%
+    );
+    backdrop-filter: blur(12.5px);
+    filter: blur(25px);
+    z-index: -1;
+  }
+
+  .text-custom-green {
+    color: rgba(0, 55, 9, 0.61);
+  }
+
+  .custom-card {
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.61);
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .custom-card:hover {
+    border: 2px solid #25ffa6;
+    background: linear-gradient(
+      236deg,
+      rgba(92, 255, 188, 0.09) 0%,
+      rgba(44, 181, 125, 0.03) 100%
+    );
+  }
+
+  .heading {
+    @apply text-4xl text-black font-light text-center mb-12;
+  }
+
+  .sub-heading {
+    @apply font-bold text-[#263f3e];
+  }
+}
