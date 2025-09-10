@@ -28,7 +28,7 @@
 
       <!-- Форма в 3-й колонке, растягивается на все 3 строки -->
       <div
-        class="md:col-span-1 md:row-start-1 md:row-span-3 flex flex-col justify-between h-full"
+        class="md:col-span-1 md:row-start-1 md:row-span-3 flex flex-col justify-between h-auto md:h-full"
       >
         <Form />
       </div>
