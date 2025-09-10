@@ -9,7 +9,7 @@
     </ul>
 
     <button
-      class="text-lg font-medium py-[6px] px-[36px] md:py-[14px] md:px-[62px] md:rounded-xl font-geist rounded-lg bg-[#255250] shadow-[0_3px_4px_0_rgba(0,0,0,0.25)] text-white"
+      class="base-button"
     >
       Zaloguj
     </button>

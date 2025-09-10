@@ -5,6 +5,8 @@
     <Hero />
     <Benefits />
     <Review />
+    <Prices />
+    <Footer />
   </div>
 </template>
 
@@ -12,4 +14,5 @@
 import Hero from "./components/sections/Hero.vue";
 import Benefits from "./components/sections/Benefits.vue";
 import Review from "./components/sections/Review.vue";
+import Prices from "./components/sections/Prices.vue";
 </script>
