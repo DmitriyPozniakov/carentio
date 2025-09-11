@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative p-6 flex flex-row md:flex-col gap-3 items-center md:min-h-[270px] justify-between md:justify-center rounded-2xl card-with-light card-bg overflow-hidden w-full h-full"
+    class="card-bg card-with-light  relative p-6 flex flex-row md:flex-col gap-3 items-center md:min-h-[270px] justify-between md:justify-center rounded-2xl overflow-hidden w-full h-full"
   >
     <img
       v-if="image"
@@ -27,3 +27,4 @@ defineProps({
   text: String
 })
 </script>
+

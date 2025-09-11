@@ -1,17 +1,20 @@
 <template>
   <section class="py-4 lg:py-12">
-    <div class="grid grid-cols-1 md:grid-cols-3 grid-rows-[auto_1fr_1fr] gap-6 w-full h-full">
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 grid-rows-[auto_1fr_1fr] gap-6 w-full h-full"
+    >
       <h2
-        class="heading font-geist font-light md:col-span-2 md:row-start-1 lg:text-[68px] text-center md:text-center pb-2 lg:border-b border-[#ccddda]"
+        class="heading font-geist mb-0 font-light md:col-span-2 md:row-start-1 lg:text-[68px] text-center md:text-center pb-2 lg:border-b border-[#ccddda]"
       >
-        Cennik stworzony<span class="hidden lg:inline"><br /></span>
-        z myślą <span class="sub-heading">o Tobie</span>
+        Cennik stworzony<span class="hidden lg:inline"><br /></span> z myślą
+        <span class="sub-heading">o Tobie</span>
       </h2>
-
       <div
-        class="md:col-span-2 md:row-start-2 md:row-span-2 flex flex-col justify-between lg:justify-end h-full gap-6"
+        class="md:col-span-2 md:row-start-2 md:row-span-2 flex flex-col justify-center lg:justify-end h-full gap-6"
       >
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:p-6 rounded-2xl"
+        >
           <div v-for="(card, index) in cards" :key="index">
             <BasePrice
               :image="card.image"
@@ -21,7 +24,6 @@
           </div>
         </div>
       </div>
-
       <div
         class="md:col-span-1 md:row-start-1 md:row-span-3 flex flex-col justify-between h-auto md:h-full"
       >
@@ -31,29 +33,22 @@
             alt="Phone Mockup"
             class="hidden lg:block w-full max-w-[420px] h-auto relative z-20 pointer-events-none"
           />
-          
           <div
             class="hidden lg:flex absolute inset-0 lg:px-4 lg:py-3 xl:px-8 py-4 items-center justify-center z-10"
           >
             <Form />
           </div>
-          
-          <div class="lg:hidden w-full">
-            <Form />
-          </div>
+          <div class="lg:hidden w-full"><Form /></div>
         </div>
       </div>
     </div>
   </section>
-</template>
-
-<script setup>
+</template> <script setup>
 import BasePrice from "../base/BasePrice.vue";
-
 const cards = [
   {
     image: "/images/Car.svg",
-    title: "Только 10 zł / samochód",
+    title: "Tylko 10 zł / samochód",
     text: "prosta, przejrzysta i uczciwa cena.",
   },
   {

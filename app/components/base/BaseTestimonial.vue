@@ -21,9 +21,13 @@
       </button>
 
       <h3
-        class="text-white font-geist text-xl xl:text-2xl font-medium text-center border-b-2 border-[#3B7B63]"
+        class="relative text-white font-geist text-xl xl:text-2xl font-medium text-center border-b-2 border-[#3B7B63]"
       >
-        {{ name }}
+        <span class="relative z-10">{{ name }}</span>
+
+        <span
+          class="absolute top-10 left-1/2 -translate-x-1/2 w-[100px] h-[80px] rounded-full bg-gradient-to-b from-[#BDFFE4] to-[#007D4A] blur-[49px] animate-[lampGlow_2s_ease-in-out_infinite_alternate] z-0"
+        ></span>
       </h3>
       <button
         class="hover:opacity-70 transition-opacity"
@@ -39,7 +43,7 @@
 
     <div class="flex items-center justify-center">
       <p
-        class="text-white font-geist text-lg md:text-2xl md:font-extralight leading-relaxed opacity-90 max-w-[1000px] text-left md:text-center"
+        class="text-white font-geist text-lg md:text-2xl md:font-extralight leading-relaxed opacity-90 max-w-[1000px] text-justify md:text-center"
       >
         {{ text }}
       </p>
