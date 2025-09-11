@@ -1,16 +1,20 @@
 <template>
   <div
-    class="anim-bg card-with-light relative p-6 flex flex-row md:flex-col gap-3 items-center md:min-h-[270px] justify-between md:justify-center rounded-2xl overflow-hidden w-full h-full text-black"
+    class="anim-bg card-with-light relative p-6 flex flex-row md:flex-col items-center md:min-h-[270px] rounded-2xl overflow-hidden w-full h-full text-black"
   >
-    <img
-      v-if="image"
-      :src="image"
-      :alt="title"
-      class="w-[33px] h-[23px] lg:w-[60px] lg:h-[41px] justify-self-start md:w-auto flex-shrink-0"
-    />
+    <div class="flex-1 flex justify-start md:justify-center">
+      <img
+        v-if="image"
+        :src="image"
+        :alt="title"
+        class="w-[33px] h-[23px] lg:w-[60px] lg:h-[41px] md:w-auto flex-shrink-0"
+      />
+    </div>
 
-    <div class="relative z-10 text-center md:text-center">
-      <h3 class="text-xl md:text-3xl font-geist font-bold text-white">
+    <div class="flex-[2] relative z-10 text-left md:text-center">
+      <h3
+        class="text-lg md:text-3xl font-geist font-bold text-white whitespace-nowrap overflow-hidden text-ellipsis"
+      >
         {{ title }}
       </h3>
       <p class="text-white text-sm md:text-lg font-geist opacity-90">
@@ -24,7 +28,6 @@
 const props = defineProps({
   title: String,
   image: String,
-  text: String
-})
+  text: String,
+});
 </script>
-
