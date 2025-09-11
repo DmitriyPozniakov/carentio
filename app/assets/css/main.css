@@ -237,12 +237,10 @@ body {
   .card-with-light {
     @apply relative overflow-hidden *:relative z-10 pointer-events-none;
 
-    /* Верхний световой слой */
     @apply before:animate-light1 before:absolute before:-top-[10%] before:-left-[40%] before:z-0 before:w-[200%] before:h-[200%] before:overflow-visible
   before:bg-radial before:from-[#28ba5866] before:via-transparent before:via-60% before:to-transparent
   before:content-[''];
 
-    /* Нижний световой слой */
     @apply after:animate-light2 after:absolute after:z-0 after:w-[80%] after:h-[80%] after:overflow-visible
   after:bg-radial after:from-[#28ba5866] after:via-transparent after:via-60% after:to-transparent
   after:content-[''];

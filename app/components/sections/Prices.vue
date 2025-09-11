@@ -1,7 +1,7 @@
 <template>
   <section class="py-4 lg:py-12">
     <div
-      class="grid grid-cols-1 md:grid-cols-3 grid-rows-[auto_1fr_1fr] gap-6 w-full h-full"
+      class="flex flex-col md:grid md:grid-cols-3 grid-rows-[auto_1fr_1fr] gap-6 w-full h-full"
     >
       <h2
         class="heading font-geist mb-0 font-light md:col-span-2 md:row-start-1 lg:text-[68px] text-center md:text-center pb-2 lg:border-b border-[#ccddda]"
@@ -13,7 +13,7 @@
         class="md:col-span-2 md:row-start-2 md:row-span-2 flex flex-col justify-center lg:justify-end h-full gap-6"
       >
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:p-6 rounded-2xl"
+          class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:p-6 rounded-2xl"
         >
           <div v-for="(card, index) in cards" :key="index">
             <BasePrice
@@ -43,7 +43,9 @@
       </div>
     </div>
   </section>
-</template> <script setup>
+</template> 
+
+<script setup>
 import BasePrice from "../base/BasePrice.vue";
 const cards = [
   {
