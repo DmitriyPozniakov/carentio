@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-hero-radial p-8 rounded-3xl xl:p-16 xl:pt-8 w-full mx-auto mb-4">
+  <section class="card-shadow bg-hero-radial p-8 rounded-3xl xl:p-16 xl:pt-8 w-full mx-auto mb-4">
     <div
       class="grid grid-cols-1 xl:grid-cols-9 items-center gap-8 mb-16"
       style="grid-template-rows: auto"
