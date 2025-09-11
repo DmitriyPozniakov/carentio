@@ -1,6 +1,6 @@
 <template>
   <form
-    class="form-bg py-[51px] z-1 px-5 rounded-3xl h-full w-full flex flex-col justify-center"
+    class="card-bg py-[51px] z-1 px-5 rounded-3xl h-full w-full flex flex-col justify-center"
   >
     <h2 class="text-white text-4xl font-geist font-black uppercase text-center pb-3">
       Skontakuj się
@@ -18,7 +18,7 @@
       <input class="base-input font-geist placeholder-white font-light" placeholder="Adres email:" type="text" />
       <div class="line my-0"></div>
       <button
-        class="base-input font-geist flex items-center justify-center cursor-pointer transition transform hover:-translate-y-1"
+        class="base-input p-8 h-[72px] font-geist flex items-center justify-center cursor-pointer transition transform hover:-translate-y-1"
       >
         Wyślij wiadomość
       </button>

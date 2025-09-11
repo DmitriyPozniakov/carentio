@@ -11,17 +11,17 @@
         <div
           v-for="(benefit, index) in benefits"
           :key="index"
-          class="custom-card xl:max-h-[150px] bg-white text-center p-4 rounded-lg shadow w-full"
+          class="custom-card xl:max-h-[112px] bg-white text-center p-2 rounded-lg shadow w-full"
         >
           <h3 class="text-base font-roboto font-semibold mb-2 text-[#001F02]">
             {{ benefit.heading }}
           </h3>
-          <p class="text-custom-green font-roboto">{{ benefit.article }}</p>
+          <p class="text-sm text-custom-green font-roboto">{{ benefit.article }}</p>
         </div>
       </div>
 
       <div
-        class="bg-hero-radial flex-1 min-h-[1000px] text-white items-center justify-center rounded-4xl hidden xl:flex"
+        class="bg-hero-radial flex-1 min-h-[870px] w-full text-white items-center justify-center rounded-4xl hidden xl:flex"
       >
         placeholder
       </div>

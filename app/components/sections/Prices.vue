@@ -10,10 +10,10 @@
         <span class="sub-heading">o Tobie</span>
       </h2>
       <div
-        class="md:col-span-2 md:row-start-2 md:row-span-2 flex flex-col justify-center lg:justify-end h-full gap-6"
+        class="flex flex-col justify-center md:col-span-2 md:row-start-2 md:row-span-2 lg:justify-end h-full gap-6"
       >
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:p-6 rounded-2xl"
+          class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:p-6 rounded-2xl"
         >
           <div v-for="(card, index) in cards" :key="index">
             <BasePrice
@@ -49,22 +49,22 @@
 import BasePrice from "../base/BasePrice.vue";
 const cards = [
   {
-    image: "/images/Car.svg",
+    image: "/images/icons/car.svg",
     title: "Tylko 10 zł / samochód",
     text: "prosta, przejrzysta i uczciwa cena.",
   },
   {
-    image: "/images/Block.svg",
+    image: "/images/icons/not.svg",
     title: "Bez żadnej ceny minimalnej",
     text: " płacisz tylko za to, czego naprawdę używasz.",
   },
   {
-    image: "/images/People.svg",
+    image: "/images/icons/man.svg",
     title: "Floty powyżej 100 aut?",
     text: "przygotujemy indywidualną ofertę dopasowaną do Twoich potrzeb i maksymalnego zysku.",
   },
   {
-    image: "/images/Stonks.svg",
+    image: "/images/icons/stonks.svg",
     title: "Konkurencja? Droższa",
     text: "my stawiamy na uczciwość i prostotę.",
   },

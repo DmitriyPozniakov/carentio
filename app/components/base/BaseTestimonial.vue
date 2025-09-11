@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative z-10 testimonial-bg card-shadow p-4 py-8 md:p-8 lg:min-h-[430px]"
+    class="relative z-10 testimonial-bg card-shadow p-4 py-8 md:p-8 lg:min-h-[550px]"
   >
     <div class="flex justify-center mb-6">
       <div class="w-20 h-20 xl:w-32 xl:h-32 rounded-full overflow-hidden">
@@ -43,7 +43,7 @@
 
     <div class="flex items-center justify-center">
       <p
-        class="text-white font-geist text-lg md:text-2xl md:font-extralight leading-relaxed opacity-90 max-w-[1000px] text-justify md:text-center"
+        class="text-white font-geist text-lg md:text-2xl md:font-extralight leading-relaxed opacity-90 max-w-[900px] text-justify md:text-center"
       >
         {{ text }}
       </p>
