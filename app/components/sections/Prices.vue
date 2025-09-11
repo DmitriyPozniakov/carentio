@@ -1,19 +1,15 @@
 <template>
   <section class="py-12">
-    <div
-      class="grid grid-cols-1 md:grid-cols-3 grid-rows-[auto_1fr_1fr] gap-6 w-full h-full"
-    >
-      <!-- Заголовок над карточками (первые 2 колонки) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 grid-rows-[auto_1fr_1fr] gap-6 w-full h-full">
       <h2
-        class="heading md:col-span-2 md:row-start-1 lg:text-[68px] text-center md:text-center mb-4"
+        class="heading md:col-span-2 md:row-start-1 lg:text-[68px] text-center md:text-center pb-4 lg:border-b border-[#ccddda]"
       >
-        Cennik stworzony<span class="hidden lg:inline"><br /></span> z myślą
-        <span class="sub-heading">o Tobie</span>
+        Cennik stworzony<span class="hidden lg:inline"><br /></span>
+        z myślą <span class="sub-heading">o Tobie</span>
       </h2>
 
-      <!-- Карточки займут первые 2 колонки, 2-я и 3-я строки -->
       <div
-        class="md:col-span-2 md:row-start-2 md:row-span-2 flex flex-col justify-between h-full gap-6"
+        class="md:col-span-2 md:row-start-2 md:row-span-2 flex flex-col justify-between lg:justify-end h-full gap-6"
       >
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div v-for="(card, index) in cards" :key="index">
@@ -26,24 +22,42 @@
         </div>
       </div>
 
-      <!-- Форма в 3-й колонке, растягивается на все 3 строки -->
       <div
         class="md:col-span-1 md:row-start-1 md:row-span-3 flex flex-col justify-between h-auto md:h-full"
       >
-        <Form />
+        <!-- Обёртка для мокапа -->
+        <div class="relative w-full flex justify-center">
+          <!-- phone mockup (выше по z-index) -->
+          <img
+            src="/images/phone.png"
+            alt="Phone Mockup"
+            class="hidden lg:block w-full max-w-[420px] h-auto relative z-20 pointer-events-none"
+          />
+          
+          <!-- Форма внутри телефона (под мокапом) -->
+          <div
+            class="hidden lg:flex absolute inset-0 lg:px-4 lg:py-3 xl:px-8 py-4 items-center justify-center z-10"
+          >
+            <Form />
+          </div>
+          
+          <!-- fallback — форма без телефона на мобильных -->
+          <div class="lg:hidden w-full">
+            <Form />
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
-
-
 <script setup>
 import BasePrice from "../base/BasePrice.vue";
+
 const cards = [
   {
     image: "/images/Car.svg",
-    title: "Tylko 10 zł / samochód",
+    title: "Только 10 zł / samochód",
     text: "prosta, przejrzysta i uczciwa cena.",
   },
   {

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
+    "@wxperia/liquid-glass-vue": "^1.0.9",
     "nuxt": "^4.1.1",
     "swiper": "^11.2.10",
     "tailwindcss": "^4.1.13",
