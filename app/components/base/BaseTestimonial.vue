@@ -8,7 +8,7 @@
       </div>
     </div>
 
-    <div class="flex justify-between items-start gap-6 mb-2 lg:mb-8">
+    <div class="flex justify-between items-start gap-6 mb-2 lg:mb-12">
       <button
         class="hover:opacity-70 transition-opacity"
         @click="$emit('prev')"

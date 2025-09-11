@@ -1,6 +1,6 @@
 <template>
   <div
-    class="anim-bg  relative p-6 flex flex-row md:flex-col gap-3 items-center md:min-h-[270px] justify-between md:justify-center rounded-2xl overflow-hidden w-full h-full"
+    class="anim-bg card-with-light relative p-6 flex flex-row md:flex-col gap-3 items-center md:min-h-[270px] justify-between md:justify-center rounded-2xl overflow-hidden w-full h-full text-black"
   >
     <img
       v-if="image"
@@ -21,9 +21,9 @@
 </template>
 
 <script setup>
-defineProps({
-  image: String,
+const props = defineProps({
   title: String,
+  image: String,
   text: String
 })
 </script>

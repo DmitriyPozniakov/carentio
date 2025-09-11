@@ -9,23 +9,11 @@
         Cennik stworzony<span class="hidden lg:inline"><br /></span> z myślą
         <span class="sub-heading">o Tobie</span>
       </h2>
+
+      <BasePrice v-for="(item, index) in cards" :key="index" v-bind="item">
+      </BasePrice>
       <div
-        class="flex flex-col justify-center md:col-span-2 md:row-start-2 md:row-span-2 lg:justify-end h-full gap-6"
-      >
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:p-6 rounded-2xl"
-        >
-          <div v-for="(card, index) in cards" :key="index">
-            <BasePrice
-              :image="card.image"
-              :title="card.title"
-              :text="card.text"
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        class="md:col-span-1 md:row-start-1 md:row-span-3 flex flex-col justify-between h-auto md:h-full"
+        class="md:col-span-1 order-2 md:row-start-1 md:row-span-3 flex flex-col justify-between h-auto md:h-full"
       >
         <div class="relative w-full flex justify-center">
           <img
