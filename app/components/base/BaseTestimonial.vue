@@ -43,7 +43,7 @@
 
     <div class="flex items-center justify-center">
       <p
-        class="text-white font-geist text-lg md:text-2xl md:font-extralight leading-relaxed opacity-90 max-w-[900px] text-justify md:text-center"
+        class="text-white font-geist text-lg md:text-3xl md:font-extralight leading-relaxed opacity-90 max-w-[1100px] text-justify md:text-center"
       >
         {{ text }}
       </p>
