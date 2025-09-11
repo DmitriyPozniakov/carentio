@@ -4,16 +4,16 @@
       Korzyści dla <span class="sub-heading">Ciebie</span>
     </h2>
 
-    <div class="flex flex-col xl:flex-row gap-8">
+    <div class="flex flex-col items-center xl:flex-row gap-8">
       <div
-        class="flex flex-col gap-4 md:grid md:grid-cols-3 md:gap-4 xl:flex xl:flex-col w-full xl:max-w-[370px] mx-auto"
+        class="flex flex-col gap-4 md:grid md:grid-cols-3 md:gap-4 xl:flex xl:flex-col w-full xl:max-w-[400px]  mx-auto"
       >
         <div
           v-for="(benefit, index) in benefits"
           :key="index"
-          class="custom-card bg-white text-center p-6 rounded-lg shadow w-full"
+          class="custom-card xl:max-h-[150px] bg-white text-center p-4 rounded-lg shadow w-full"
         >
-          <h3 class="text-xl font-roboto font-semibold mb-2 text-[#001F02]">
+          <h3 class="text-base font-roboto font-semibold mb-2 text-[#001F02]">
             {{ benefit.heading }}
           </h3>
           <p class="text-custom-green font-roboto">{{ benefit.article }}</p>
@@ -21,15 +21,13 @@
       </div>
 
       <div
-        class="bg-hero-radial flex-1 min-h-full text-white items-center justify-center rounded-4xl hidden xl:flex"
+        class="bg-hero-radial flex-1 min-h-[1000px] text-white items-center justify-center rounded-4xl hidden xl:flex"
       >
         placeholder
       </div>
     </div>
   </section>
 </template>
-
-
 
 
 <script setup lang="ts">

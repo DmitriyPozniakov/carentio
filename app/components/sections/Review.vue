@@ -1,5 +1,5 @@
 <template>
-  <section class="mb-16">
+  <section class="mb-16 min-h-[550px]">
     <h2 class="heading mb-8 font-geist">
       Opinie <span class="sub-heading">Klientów</span>
     </h2>
@@ -15,7 +15,7 @@
       <SwiperSlide
         v-for="(review, i) in reviews"
         :key="i"
-        class="w-full h-screen flex items-center justify-center"
+        class="w-full h-full flex items-center justify-center"
       >
         <BaseTestimonial
           :name="review.name"
@@ -28,7 +28,6 @@
     </Swiper>
   </section>
 </template>
-
 <script setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination } from "swiper/modules";
@@ -57,22 +56,22 @@ const reviews = [
     name: "Mike, Dubai",
     avatar: "/images/man.svg",
     text: `Before Carentio, managing rentals was eating up hours of my week.
-    Now I save time and cut costs effortlessly — every vehicle's
-    performance and every client's details are just a click away.`,
+Now I save time and cut costs effortlessly — every vehicle's
+performance and every client's details are just a click away.`,
   },
   {
     name: "Mike, Dubai",
     avatar: "/images/man.svg",
     text: `Before Carentio, managing rentals was eating up hours of my week.
-    Now I save time and cut costs effortlessly — every vehicle's
-    performance and every client's details are just a click away.`,
+Now I save time and cut costs effortlessly — every vehicle's
+performance and every client's details are just a click away.`,
   },
   {
     name: "Mike, Dubai",
     avatar: "/images/man.svg",
     text: `Before Carentio, managing rentals was eating up hours of my week.
-    Now I save time and cut costs effortlessly — every vehicle's
-    performance and every client's details are just a click away.`,
+Now I save time and cut costs effortlessly — every vehicle's
+performance and every client's details are just a click away.`,
   },
 ];
 </script>

@@ -1,13 +1,10 @@
 <template>
-  <div class="relative z-10 bg-hero-radial rounded-3xl p-4 py-8 md:p-8">
-    
+  <div
+    class="relative z-10 bg-hero-radial rounded-3xl p-4 py-8 md:p-8"
+  >
     <div class="flex justify-center mb-6">
       <div class="w-20 h-20 xl:w-32 xl:h-32 rounded-full overflow-hidden">
-        <img
-          :src="avatar"
-          :alt="name"
-          class="w-full h-full object-cover"
-        />
+        <img :src="avatar" :alt="name" class="w-full h-full object-cover" />
       </div>
     </div>
 
@@ -23,11 +20,11 @@
         />
       </button>
 
-      <h3
-        class="text-white font-geist text-xl xl:text-2xl font-medium text-center border-b-2 border-[#3B7B63]"
-      >
-        {{ name }}
-      </h3>
+        <h3
+          class="text-white font-geist text-xl xl:text-2xl font-medium text-center border-b-2 border-[#3B7B63]"
+        >
+          {{ name }}
+        </h3>
 
       <button
         class="hover:opacity-70 transition-opacity"
@@ -56,6 +53,6 @@ defineProps({
   name: String,
   avatar: String,
   text: String,
-})
-defineEmits(["prev", "next"])
+});
+defineEmits(["prev", "next"]);
 </script>
