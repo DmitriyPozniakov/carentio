@@ -1,6 +1,6 @@
 <template>
   <section class="py-12">
-    <h2 class="heading">
+    <h2 class="heading font-geist">
       Korzyści dla <span class="sub-heading">Ciebie</span>
     </h2>
 
@@ -13,10 +13,10 @@
           :key="index"
           class="custom-card bg-white text-center p-6 rounded-lg shadow w-full"
         >
-          <h3 class="text-xl font-semibold mb-2 text-[#001F02]">
+          <h3 class="text-xl font-roboto font-semibold mb-2 text-[#001F02]">
             {{ benefit.heading }}
           </h3>
-          <p class="text-custom-green">{{ benefit.article }}</p>
+          <p class="text-custom-green font-roboto">{{ benefit.article }}</p>
         </div>
       </div>
 

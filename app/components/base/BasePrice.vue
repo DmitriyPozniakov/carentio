@@ -12,10 +12,10 @@
 
     <!-- Текст -->
     <div class="relative z-10 text-center md:text-center">
-      <h3 class="text-xl font-bold text-black">
+      <h3 class="text-xl md:text-3xl font-geist font-bold text-black">
         {{ title }}
       </h3>
-      <p class="text-black opacity-90">
+      <p class="text-black text-sm md:text-lg font-geist opacity-90">
         {{ text }}
       </p>
     </div>

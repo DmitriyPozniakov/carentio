@@ -2,7 +2,7 @@
   <section class="py-12">
     <div class="grid grid-cols-1 md:grid-cols-3 grid-rows-[auto_1fr_1fr] gap-6 w-full h-full">
       <h2
-        class="heading md:col-span-2 md:row-start-1 lg:text-[68px] text-center md:text-center pb-4 lg:border-b border-[#ccddda]"
+        class="heading font-geist font-light md:col-span-2 md:row-start-1 lg:text-[68px] text-center md:text-center pb-4 lg:border-b border-[#ccddda]"
       >
         Cennik stworzony<span class="hidden lg:inline"><br /></span>
         z myślą <span class="sub-heading">o Tobie</span>

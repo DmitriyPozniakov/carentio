@@ -1,6 +1,6 @@
 <template>
   <section class="mb-16">
-    <h2 class="heading mb-8">
+    <h2 class="heading mb-8 font-geist">
       Opinie <span class="sub-heading">Klientów</span>
     </h2>
 

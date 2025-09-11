@@ -24,7 +24,7 @@
       </button>
 
       <h3
-        class="text-white text-xl xl:text-2xl font-medium text-center border-b-2 border-[#3B7B63]"
+        class="text-white font-geist text-xl xl:text-2xl font-medium text-center border-b-2 border-[#3B7B63]"
       >
         {{ name }}
       </h3>
@@ -43,7 +43,7 @@
 
     <div class="flex items-center justify-center">
       <p
-        class="text-white text-lg md:text-2xl md:font-extralight leading-relaxed opacity-90 max-w-[1000px] text-left md:text-center"
+        class="text-white font-geist text-lg md:text-2xl md:font-extralight leading-relaxed opacity-90 max-w-[1000px] text-left md:text-center"
       >
         {{ text }}
       </p>
