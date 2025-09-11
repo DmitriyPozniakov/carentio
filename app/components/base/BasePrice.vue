@@ -1,8 +1,8 @@
 <template>
   <div
-    class="anim-bg card-with-light relative p-6 flex flex-row md:flex-col items-center md:min-h-[270px] rounded-2xl overflow-hidden w-full h-full text-black"
+    class="anim-bg card-with-light relative p-6 flex flex-col items-center justify-center md:min-h-[270px] h-full rounded-2xl overflow-hidden w-full text-black"
   >
-    <div class="flex-1 flex justify-start md:justify-center">
+    <div class="flex justify-center mb-4">
       <img
         v-if="image"
         :src="image"
@@ -11,13 +11,19 @@
       />
     </div>
 
-    <div class="flex-[2] relative z-10 text-left md:text-center">
-      <h3
-        class="text-lg md:text-3xl font-geist font-bold text-white whitespace-nowrap overflow-hidden text-ellipsis"
+    <div class="relative z-10 text-center flex flex-col items-center w-full">
+      <div class="flex flex-col items-center w-full mb-4">
+        <h3
+          class="text-lg md:text-3xl font-geist font-bold text-white lg:whitespace-nowrap overflow-hidden text-ellipsis"
+        >
+          {{ title }}
+        </h3>
+        <hr class="border-t border-white/30 w-full mt-2 max-w-xs" />
+      </div>
+
+      <p
+        class="text-white text-sm md:text-lg font-geist opacity-90 text-center max-w-md"
       >
-        {{ title }}
-      </h3>
-      <p class="text-white text-sm md:text-lg font-geist opacity-90">
         {{ text }}
       </p>
     </div>
